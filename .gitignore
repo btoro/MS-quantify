@@ -1,6 +1,8 @@
 *.mat
 *.log
 *.asv
-
+*.xlsx
+*.csv
+*.mzXML
 
 !.gitignore

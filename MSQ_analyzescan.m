@@ -1,29 +1,24 @@
 function MSQ_analyzescan()
 
+
+%% Configuration
 %Select directory than contains all mzXML files, and config files
 directory = 'data';
 
+%%
 currdir = cd;
 
 cd(directory)
 
-interpretScans();
-
-
-
-
-
-
+analyzeScans();
+ 
 %Return to main directory
 cd(currdir)
 
 
-
-
-
 end
 
-function interpretScans()
+function analyzeScans()
     %%
     % Removes previously openned figures :D  
     delete(findall(0,'Type','figure'))
